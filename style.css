@@ -181,13 +181,14 @@
   border-bottom: none;
 }
 
-.sidebar{
+.sidebar {
   display: none;
 }
-#check{
+#check {
   display: none;
 }
-#btn , #cancel{
+#btn,
+#cancel {
   display: none;
 }
 
@@ -585,203 +586,193 @@ footer {
 
 /*  RESPONSIVENESS OF  WHOLE WEBSITE */
 
-
 /* Media Queries for Sliding Text */
 
-@media (min-width : 320px ) and (max-width:400px){
-  .panel p{
-   font-size: 0.6rem;
+@media (min-width: 320px) and (max-width: 400px) {
+  .panel p {
+    font-size: 0.6rem;
   }
 }
 
 /* Media Queries for a Responsive Navbar */
 
-@media (min-width:320px) and ( max-width : 655px ) {
-
-    .logo {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    .search {
-      position: absolute;
-      right: 15px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      border: none;
-    }
-    .search input {
-      padding: 2px;
-      font-size: 14px;
-      width: 100px;
-      outline: none;
-      border: none;
-    }
-    .search i {
-      padding: 2px;
-      font-size: 16px;
-      outline: none;
-      border: none;
-    }
-    .nav {
+@media (min-width: 320px) and (max-width: 655px) {
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .search {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+  }
+  .search input {
+    padding: 2px;
+    font-size: 14px;
+    width: 100px;
+    outline: none;
+    border: none;
+  }
+  .search i {
+    padding: 2px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+  }
+  .nav {
     display: none;
-    }
-    .side{
+  }
+  .side {
     display: none;
-    }
+  }
 
-/* Hides the checkbox */
+  /* Hides the checkbox */
 
-#check {
-  display: none;
-}
+  #check {
+    display: none;
+  }
 
-/* Label with the menu icons (Bar and Cancel) */
+  /* Label with the menu icons (Bar and Cancel) */
 
-label {
-  position: fixed;
-  top: 50px;
-  left: 20px;
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 1001;
-  color: black;
-}
+  label {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    color: black;
+  }
 
-/* Bar icon */
+  /* Bar icon */
 
-#btn {
-  display: inline;
-}
+  #btn {
+    display: inline;
+  }
 
-/* Close icon  */
+  /* Close icon  */
 
-#cancel {
-  display: none;
-}
+  #cancel {
+    display: none;
+  }
 
-/* When checkbox is checked, Bar icon becomes hidden */
+  /* When checkbox is checked, Bar icon becomes hidden */
 
-#check:checked ~ label #btn {
-  display: none;
-}
+  #check:checked ~ label #btn {
+    display: none;
+  }
 
-/* When checkbox is checked, Cancel icon becomes visible */
+  /* When checkbox is checked, Cancel icon becomes visible */
 
-#check:checked ~ label #cancel {
-  display: inline;
+  #check:checked ~ label #cancel {
+    display: inline;
+  }
 
-}
+  /* Sidebar style */
 
-/* Sidebar style */
+  .sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #fce495;
+    left: -250px;
+    top: 0;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 150px;
+    display: flex;
+    text-align: left;
+    color: black;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.sidebar {
-  position: fixed;
-  width: 250px;
-  height: 100%;
-  background-color: #fce495;
-  left: -250px; 
-  top: 0;
-  transition: left 0.3s ease;
-  z-index: 1000;
-  padding-top: 150px;
-  display: flex;
-  text-align: left;
-  color: black;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  /* When checkbox is checked, the sidebar moves in */
 
-/* When checkbox is checked, the sidebar moves in */
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
 
-#check:checked ~ .sidebar {
-  left: 0;
-}
+  /* Sidebar links */
 
-/* Sidebar links */
+  .sidebar .nav-bar {
+    list-style: none;
+    padding: 0;
+  }
 
-.sidebar .nav-bar {
-  list-style: none;
-  padding: 0;
-}
+  .sidebar .nav-bar li {
+    text-align: center;
+    color: black;
+    padding: 25px 20px;
+    width: 100%;
+  }
 
-.sidebar .nav-bar li {
-  text-align: center;
-  color: black;
-  padding: 25px 20px;
-  width: 100%;
-}
+  .sidebar .nav-bar ul li {
+    color: black;
+  }
 
-.sidebar .nav-bar ul li{
-  color: black;
-}
+  .sidebar .nav-bar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-align: left;
+  }
 
-.sidebar .nav-bar li a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  display: block;
-  text-align: left;
+  /* Hover effect for links */
 
-}
-
-/* Hover effect for links */
-
-.sidebar .nav-bar li a:hover {
-
-background-color: rgb(177, 172, 172);
-}
-
+  .sidebar .nav-bar li a:hover {
+    background-color: rgb(177, 172, 172);
+  }
 }
 
 /* Media Queries for Font of Logo */
 
-@media (min-width : 484px ) and (max-width:513px){
+@media (min-width: 484px) and (max-width: 513px) {
   .logo a h1 {
     font-size: 1.4rem;
-  } 
+  }
 }
 
-@media (min-width : 320px ) and (max-width:483px){
+@media (min-width: 320px) and (max-width: 483px) {
   .logo a h1 {
     font-size: 1rem;
-  } 
+  }
 }
 
 /* Media Queries for Search Bar */
 
-@media (min-width : 320px ) and (max-width:483px){
+@media (min-width: 320px) and (max-width: 483px) {
+  .search input {
+    font-size: 8px;
+    width: 40px;
+  }
 
-.search input {
-  font-size: 8px;
-  width: 40px;
-}
-
-.search i {
-  font-size: 8px;
-}
-
+  .search i {
+    font-size: 8px;
+  }
 }
 
 /* Media Queries for Side Bar */
 
-@media (min-width : 320px ) and (max-width:483px){
-
+@media (min-width: 320px) and (max-width: 483px) {
   label {
-    top:55px;
+    top: 55px;
     font-size: 20px;
   }
 }
 
 /* Media Queries for 320px index page  */
 
-@media (min-width : 320px ) and (max-width:364px){
-
-  .par .head p{
+@media (min-width: 320px) and (max-width: 364px) {
+  .par .head p {
     font-size: 0.8rem;
   }
-.parag p{
+  .parag p {
     font-size: 0.5rem;
   }
 }
@@ -796,12 +787,12 @@ background-color: rgb(177, 172, 172);
 
 /*  ABAYAS TAB */
 
-  @media (max-width: 668px) {
-    .h-collect {
-      flex: 1 1 calc(50% - 20px);
-      max-width: calc(50% - 20px);
-    }
+@media (max-width: 668px) {
+  .h-collect {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
+}
 
 /* MOMMY & ME SECTION */
 
@@ -902,6 +893,3 @@ background-color: rgb(177, 172, 172);
     font-size: 0.85rem;
   }
 }
-
-
-
