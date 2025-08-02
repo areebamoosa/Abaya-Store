@@ -878,7 +878,7 @@ footer {
 
 /* FOOTER */
 
-@media (min-width: 320px) and (max-width: 1636px) {
+@media (min-width: 320px) and (max-width: 1640px) {
   footer {
     text-align: center;
     padding: 20px;
