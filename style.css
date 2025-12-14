@@ -480,6 +480,19 @@ footer {
   padding: 20px;
 }
 
+.c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p{
+  padding: 6px;
+}
+.f{
+  margin-bottom: -20px;
+}
+
 /* Other Tabs */
 
 /* Transition Text */
@@ -891,5 +904,8 @@ footer {
     display: block;
     margin-top: 5px;
     font-size: 0.85rem;
+  }
+  .f{
+    margin-bottom: 0px;
   }
 }
