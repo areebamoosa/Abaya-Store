@@ -1,4 +1,4 @@
-# 🧕🏻 Abaya Store Website
+# 🧕🏻 Abaya Buth
 
 A website for abayas with a design so smooth, it instantly draws you in at first glance.
 
@@ -17,11 +17,6 @@ It’s built to be **fully responsive**, ensuring a smooth experience across dif
 
 ![Screenshot](./Demo/Demo.png)
 
-## 🎥 Demo Video
+## 🌐 Live Demo
 
-👉 [Click here to watch the demo video](https://streamable.com/xtqdws)
-
----
-
-📘 Curious how I built this or want to follow a similar learning path?  
-Check out [my-frontend-journey](https://github.com/areebamoosa/my-frontend-journey). I’ve documented my full frontend journey (notes, concepts, and more).
+**View Live Website:** https://abayabuth.netlify.app
