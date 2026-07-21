@@ -19,4 +19,4 @@ It’s built to be **fully responsive**, ensuring a smooth experience across dif
 
 ## 🌐 Live Demo
 
-**View Live Website:** https://areebamoosa.github.io/Abaya-Store/
+**View Live Website:** https://abaya-buth.vercel.app/
